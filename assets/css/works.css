@@ -1,0 +1,119 @@
+.cursor {
+  opacity: 0;
+  display: grid;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 20;
+  place-content: center;
+}
+.cursor img {
+  display: none;
+}
+.cursor p {
+  display: none;
+}
+
+body {
+  transition: 0.5s;
+  color: white;
+}
+
+.hover-active {
+  opacity: 1;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  color: white;
+}
+.hover-active p {
+  display: flex;
+}
+
+h1 {
+  font-size: 6vw;
+  line-height: 1;
+  letter-spacing: -0.1vw;
+  color: white;
+  grid-column: span 12;
+  padding: 0 6vw;
+  padding-top: 15vw;
+  margin-bottom: 0.67em;
+  padding-bottom: 7vw;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 6;
+  padding-left: 6vw;
+  row-gap: 10vw;
+  padding-top: 20vw;
+}
+.side a {
+  text-decoration: none;
+  color: inherit;
+}
+.side h4 {
+  margin: 2vw 0;
+}
+.side p {
+  opacity: 0.6;
+  padding-right: 11vw;
+}
+.side p span {
+  display: inline-block;
+}
+
+.side:first-of-type {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 6vw;
+  row-gap: 20vw;
+}
+
+.works-img {
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+.works-img picture img {
+  position: relative;
+  top: -10%;
+  left: -5%;
+  width: 120%;
+  height: 120%;
+}
+
+.work_caption {
+  padding-top: 3vw;
+  display: flex;
+}
+
+.line_sep {
+  height: 1px;
+  width: 100%;
+  margin-top: 0.8vw;
+  background: rgba(255, 255, 255, 0.3);
+  width: 35%;
+}
+
+.client {
+  padding-right: 20px;
+  white-space: nowrap;
+  opacity: 0.7;
+  color: inherit;
+}
+
+h4 {
+  font-size: 2.4vw;
+  letter-spacing: -0.05vw;
+  font-weight: 400;
+  line-height: 1.1;
+  color: inherit;
+}
+
+p {
+  color: inherit;
+}/*# sourceMappingURL=works.css.map */
