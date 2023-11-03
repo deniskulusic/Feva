@@ -15,6 +15,21 @@
   display: none;
 }
 
+h3 {
+  font-size: 4vw;
+  letter-spacing: -0.1vw;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 2.2vw;
+  line-height: 1.2;
+  letter-spacing: -0.05vw;
+  font-weight: 400;
+}
+
 footer {
   margin-top: 0 !important;
 }
@@ -92,7 +107,7 @@ h1 {
   position: relative;
   z-index: 2;
   overflow: clip;
-  padding-bottom: 60vw;
+  padding-bottom: 20vw;
   color: #e0ccbb;
 }
 .paragraph h2 {
@@ -118,6 +133,11 @@ h1 {
   z-index: 3;
   overflow: clip;
   height: 130vh;
+  background-image: url("https://fleava.com/assets/img/home/about.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .up-section-content {
@@ -249,4 +269,120 @@ h2 {
 
 footer {
   z-index: 3;
+}
+
+.awards {
+  background-color: #aaa;
+  padding-bottom: 27vw;
+  padding-top: 10vw;
+}
+.awards span {
+  grid-column: span 12;
+  color: black;
+  margin-bottom: 3vw;
+}
+.awards h3 {
+  grid-column: span 8;
+  color: black;
+  margin-bottom: 3vw;
+}
+.awards p {
+  color: black;
+  font-size: 1.5vw;
+  grid-column: span 6;
+}
+.awards .img-div {
+  grid-column: 8/span 3;
+  display: flex;
+}
+.awards .img-div #img1 {
+  width: 100%;
+  margin-top: auto;
+}
+
+.side-img {
+  background-color: inherit;
+}
+
+.side-img-div {
+  top: -20vw;
+  position: relative;
+  width: 83%;
+  height: 85vh;
+}
+
+.stories {
+  padding-bottom: 20vw;
+}
+
+.stories-element {
+  grid-column: span 12;
+  border-top: white solid 1px;
+  padding-bottom: 4vw;
+  padding-top: 3vw;
+  position: relative;
+}
+.stories-element div {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+}
+.stories-element h4 {
+  grid-column: span 4;
+}
+.stories-element p {
+  grid-column: span 4;
+}
+.stories-element img {
+  display: none;
+}
+
+.hover-active-img img {
+  display: block;
+  z-index: 4;
+}
+
+.featured {
+  grid-column: 5/span 5;
+  margin-bottom: 3vw;
+}
+
+.explore {
+  position: relative;
+  grid-column: 5/span 3;
+  color: inherit;
+  text-decoration: none;
+  margin-top: 2vw;
+}
+
+.magnet_circle, .magnet_circle_fast {
+  transition: all 0.2s linear;
+  display: block;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: absolute;
+  right: -3vw;
+  top: 12px;
+  pointer-events: none;
+  top: -18px;
+}
+
+.magnet:hover .magnet_circle, .magnet:hover .magnet_circle_fast {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-out;
+}
+
+.magnet:hover .magnet_arrow {
+  transition: all 0.1s linear;
+}
+
+.magnet_arrow {
+  transition: transform 0.2s linear;
+  display: block;
+  position: absolute;
+  transform: scale(1.5);
+  top: 1.1vw;
+  left: 1.3vw;
 }/*# sourceMappingURL=home.css.map */

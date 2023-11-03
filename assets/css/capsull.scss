@@ -83,7 +83,7 @@ h1{
     position: relative;
     z-index: 2;
     overflow: clip;
-    padding-bottom: 60vw;
+    padding-bottom: 20vw;
 }
 .side-p{
     grid-column:2/ span 2;
@@ -108,7 +108,20 @@ h1{
   z-index: 3;
   overflow: clip;
   height: 100vh;
-
+  background-image: url("https://fleava.com/assets/img/works/capsll/full1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#up-section-2{
+    background-image: url("https://fleava.com/assets/img/works/capsll/full2.webp");
+}
+#up-section-3{
+    background-image: url("https://fleava.com/assets/img/works/capsll/full3.webp");
+}
+#up-section-4{
+    background-image: url("https://fleava.com/assets/img/works/lustica/banner.jpg");
 }
 .up-section-container{
     position: relative;
@@ -134,15 +147,15 @@ h1{
         position: absolute;
         width: 110vw;
         left: 0;
-        top: -106vh;
+        top: -105vh;
         height: 110vh;
         object-fit: cover;
     }
     .second{
-        top: -116vh;
+        top: -111vh;
     }
     .third{
-        top: -126vh;
+        top: -117vh;
     }
     .concept{
         padding-top: 10vw;

@@ -8,8 +8,7 @@ window.scroll(0,0);
 let getScroll=0;
 let cursor=document.querySelector("#cursor");
 let CursorImgNav=document.querySelectorAll("#cursor-img , #cursor-img-1 , #cursor-img-2 , #cursor-img-3 , #cursor-img-4");
-let CursorImgSmall=document.querySelectorAll("#small-cursor-img-1, #small-cursor-img-2 , #small-cursor-img-3 , #small-cursor-img-4 , #small-cursor-img-5");
-let CursorImgStories=document.querySelectorAll("#stories-cursor-1, #stories-cursor-2, #stories-cursor-3");
+let CursorImgStories=document.querySelectorAll("#stories-cursor-1, #stories-cursor-2, #stories-cursor-3, #stories-cursor-4, #stories-cursor-5, #stories-cursor-6, #stories-cursor-7");
 let time=200;
 let totalX = 0;
 let totalY = 0;
@@ -20,11 +19,10 @@ let y=0;
 let MouseON=false;
 let HoverElement=document.querySelectorAll(".hover");
 let HoverElementImg=document.querySelectorAll(".hover-img");
-let HoverElementImgSmall=document.querySelectorAll(".hover-img-small");
 let HoverElementImgStories=document.querySelectorAll(".stories-element");
 let WhichCursor=0;
 let Stories=window.pageYOffset + HoverElementImgStories[0].getBoundingClientRect().top;
-
+let speed;
 //For dot cursor
 for(let i=0;i<HoverElement.length;i++){
 HoverElement[i].addEventListener("mouseover", function(){
@@ -69,34 +67,16 @@ for(let i=0;i<HoverElementImg.length;i++){
 
 
 //For Small img cursor
-for(let i=0;i<HoverElementImgSmall.length;i++){
-  HoverElementImgSmall[i].addEventListener("mouseover", function(){
-    WhichCursor=2;
-    HoverElementImgSmall[i].parentElement.classList.add("hover-active-img");
-    document.body.style.backgroundColor=HoverElementImgSmall[i].dataset.color;
-      document.body.style.color=HoverElementImgSmall[i].dataset.textColor;
-  });
-  HoverElementImgSmall[i].addEventListener("mouseout", function(){
-    
-    HoverElementImgSmall[i].parentElement.classList.remove("hover-active-img");
-    document.body.style.backgroundColor="black";
-    document.body.style.color="white";
-  });
-}
 
 //For Stories section cursor
 for(let i=0;i<HoverElementImgStories.length;i++){
   HoverElementImgStories[i].addEventListener("mouseover", function(){
     WhichCursor=3;
     HoverElementImgStories[i].classList.add("hover-active-img");
-    document.body.style.backgroundColor=HoverElementImgStories[i].dataset.color;
-      document.body.style.color=HoverElementImgStories[i].dataset.textColor;
   });
   HoverElementImgStories[i].addEventListener("mouseout", function(){
     
     HoverElementImgStories[i].classList.remove("hover-active-img");
-    document.body.style.backgroundColor="black";
-    document.body.style.color="white";
   });
 }
 //Track cursor speed
@@ -120,7 +100,6 @@ document.addEventListener("mousemove", function(ev){
 function MoveCursor(ev){
   x=ev.clientX;
     y=ev.clientY;
-    console.log(x,y)
     //totalX and totalY are the amount of space that cursor passed
     totalX += Math.abs(ev.movementX);
     totalY += Math.abs(ev.movementY);
@@ -130,12 +109,6 @@ function MoveCursor(ev){
       cursor.animate({
         transform : "translateX( calc(-4vw + " + x + "px)) translateY( calc(-6vw + " + y + "px)) scale("+ (1+0.5*speed) +")"
       },{duration:1200,fill:"forwards"})
-    }
-    else if(WhichCursor==2){
-        for(let i=0;i<CursorImgSmall.length;i++){
-        CursorImgSmall[i].animate({
-            transform : "translateX( calc(-100px + " + x + "px)) translateY(calc(20px + " + y + "px)) scale(1) rotate(" + ev.movementX + "deg)"
-          },{duration:1200,fill:"forwards"})}
     }
     else if(WhichCursor==3){
       for(let i=0;i<CursorImgStories.length;i++){
@@ -159,73 +132,31 @@ function MoveCursor(ev){
 
 let footer=document.querySelector(' #footer'); 
 let footerText=document.querySelectorAll("#footer-text-1 , #footer-text-2");
-let WallpaperScroll = document.querySelectorAll('#wallpaper-scroll , #wallpaper-content');
-let Sections= document.querySelectorAll('#section1');
-let Paragraph= document.querySelector('#paragraph');
-let Choose= document.querySelector('#choose ');
-let UpSection= document.querySelectorAll('#up-section ');
+let UpSection= document.querySelector('#up-section');
 let UpContainer= document.querySelectorAll('#up-container , #up-container-2');
-let UpContent=document.querySelector('#upcontent');
-let UpImg=document.querySelectorAll('#up-img');
-let ScrollImg = document.querySelector('#img1');
-let ScrollimgFromTop=window.pageYOffset + ScrollImg.getBoundingClientRect().top;
-let paragraphFromTop=window.pageYOffset + Paragraph.getBoundingClientRect().top;
 let footerFromTop=window.pageYOffset + footer.getBoundingClientRect().top;
-let upFromTop=[
-    window.pageYOffset + UpSection[0].getBoundingClientRect().top 
-]
+let upFromTop=window.pageYOffset + UpSection.getBoundingClientRect().top ;
 function Repeat(){
-  
-//Paragraph animate
-Paragraph.animate({
-  transform : "translateY(" + 0.7*( getScroll -paragraphFromTop+0.3*screen.height) + "px )"
-},{duration:500,fill:"forwards"})
-//Paragraph fade
-if(screen.height-getScroll<0)
-  Paragraph.style.opacity=1;
-else
-  Paragraph.style.opacity=1/(1.3*screen.height/getScroll-1) -1;
 
-//Wallpaper animate
-WallpaperScroll[1].animate({
-  transform : "translateY(" + 1*(getScroll ) + "px )"
-},{duration:500,fill:"forwards"})
-WallpaperScroll[0].animate({
-  transform : "translateY(" + 0.8*(getScroll ) + "px )"
-},{duration:0,fill:"forwards"})
-//Wallpaper fade
-WallpaperScroll[0].style.opacity=0.5*screen.height/getScroll;
-
-
-//Opening section open
+    //Opening section open
   if(0.05*(upFromTop-getScroll)<10){
     for(let i=0;i<UpContainer.length;i++)
     UpContainer[i].style.width=(0.05*(upFromTop-getScroll))+"vw";
-  }
-  if(0.05*(upFromTop-getScroll)<0){
+}
+if(0.05*(upFromTop-getScroll)<0){
     for(let i=0;i<UpContainer.length;i++)
     UpContainer[i].style.width="0";
-  }
-  if(upFromTop-getScroll<0)
-  UpContent.style.opacity=1;
-else
-  UpContent.style.opacity=1/(1.3*upFromTop/getScroll-1) -1;
-//Footer animate
-  footerText[0].animate({
-    transform : "translateY(calc(-50% + " + 0.5*(getScroll - footerFromTop  ) + "px))"
-  },{duration:500,fill:"forwards"})
-  footerText[1].animate({
-      transform : " matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,"+ 0.5*(getScroll - footerFromTop  ) +", 0, 1)"
-    },{duration:500,fill:"forwards"})        
-
-//Side img animate
-  ScrollImg.animate({
-    transform : "translateY(calc(" + 0.25*( getScroll - ScrollimgFromTop ) + "px + 5%)"
-  },{duration:2000,fill:"forwards"})
-      
-    
-};
-window.addEventListener("scroll",function(){
-    getScroll=this.pageYOffset;
-    requestAnimationFrame(Repeat);
-  }); 
+}
+    //Footer animate
+    footerText[0].animate({
+      transform : "translateY(calc(-50% + " + 0.5*(getScroll - footerFromTop  ) + "px))"
+    },{duration:500,fill:"forwards"})
+    footerText[1].animate({
+        transform : " matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,"+ 0.5*(getScroll - footerFromTop  ) +", 0, 1)"
+      },{duration:500,fill:"forwards"})
+            
+      };
+      window.addEventListener("scroll",function(){
+          getScroll=this.pageYOffset;
+          requestAnimationFrame(Repeat);
+        }); 

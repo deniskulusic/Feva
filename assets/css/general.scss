@@ -34,6 +34,12 @@ picture img {
   -o-object-fit: cover;
   object-fit: cover;
 }
+picture video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 section {
   width: 100%;
   height: auto;
@@ -75,6 +81,10 @@ section {
     width: auto;
   height: 1.25vw;
   }
+}
+nav{
+  position: fixed;
+  z-index: 1000;
 }
 .nav-menu-button{
     position: fixed;

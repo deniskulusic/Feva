@@ -1,0 +1,249 @@
+.cursor {
+  opacity: 0;
+  display: grid;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 20;
+  place-content: center;
+}
+.cursor img {
+  display: none;
+}
+.cursor p {
+  display: none;
+}
+
+footer {
+  margin-top: 0 !important;
+}
+
+body {
+  transition: 0.5s;
+  color: white;
+}
+
+.hover-active {
+  opacity: 1;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  color: white;
+}
+.hover-active p {
+  display: flex;
+}
+
+h1 {
+  font-size: 4.5vw;
+  letter-spacing: -0.1vw;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.head-text {
+  padding-bottom: 10vw;
+  padding-top: 15vw;
+  min-height: 80vh;
+  color: white;
+  display: flex;
+  align-items: end;
+}
+.head-text h1 {
+  grid-column: 2/span 9;
+  margin-bottom: 2vw;
+}
+
+.head-text-link {
+  grid-column: 2/span 9;
+  font-weight: 400;
+}
+.head-text-link a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.head-text-link a:hover {
+  opacity: 1;
+}
+
+.up-section {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  z-index: 3;
+  overflow: clip;
+  height: 100vh;
+  background-image: url("https://images.prismic.io/fleava/9dc20a76-f8a3-48a7-ad48-528f93203a7a_human-centric-brand-marketing.webp?auto=compress,format");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.up-section-container {
+  position: relative;
+  left: 0;
+  width: 10vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  overflow: clip;
+}
+
+.up-section-container-2 {
+  right: 0;
+  position: relative;
+  width: 10vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  overflow: clip;
+}
+
+.up-section-img {
+  position: absolute;
+  width: 110vw;
+  left: 0;
+  top: -105vh;
+  height: 110vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stories {
+  padding: 10vw 0 10vw;
+  background-color: #1B1B1B;
+}
+
+.stories-element {
+  grid-column: span 12;
+  border-top: white solid 1px;
+  padding-bottom: 4vw;
+  padding-top: 3vw;
+  position: relative;
+}
+.stories-element div {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+}
+.stories-element h4 {
+  grid-column: span 4;
+}
+.stories-element p {
+  grid-column: span 4;
+}
+.stories-element img {
+  display: none;
+}
+
+.hover-active-img img {
+  display: block;
+  z-index: 4;
+}
+
+.featured {
+  grid-column: 5/span 5;
+  margin-bottom: 3vw;
+}
+
+.explore {
+  position: relative;
+  grid-column: 5/span 3;
+  color: inherit;
+  text-decoration: none;
+  margin-top: 2vw;
+}
+
+.magnet_circle, .magnet_circle_fast {
+  transition: all 0.2s linear;
+  display: block;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  position: absolute;
+  right: -3vw;
+  top: 12px;
+  pointer-events: none;
+  top: -18px;
+}
+
+.magnet:hover .magnet_circle, .magnet:hover .magnet_circle_fast {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-out;
+}
+
+.magnet:hover .magnet_arrow {
+  transition: all 0.1s linear;
+}
+
+.magnet_arrow {
+  transition: transform 0.2s linear;
+  display: block;
+  position: absolute;
+  transform: scale(1.5);
+  top: 1.1vw;
+  left: 1.3vw;
+}
+
+.article {
+  padding: 10vw 0 10vw;
+  background-color: #111;
+}
+.article .maxw {
+  max-width: 45vw;
+}
+.article h2 {
+  font-size: 3.5vw;
+  letter-spacing: -0.1vw;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 4vw;
+  grid-column: span 12;
+  margin-bottom: 1vw;
+}
+.article p {
+  max-width: 100%;
+  font-size: 1.4vw;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 4vw;
+  grid-column: span 12;
+}
+.article h3 {
+  max-width: 100%;
+  font-size: 2.5vw;
+  letter-spacing: -0.05vw;
+  font-weight: 500;
+  line-height: 1.2;
+  grid-column: span 12;
+  margin-bottom: 1vw;
+}
+.article blockquote {
+  grid-column: span 12;
+  border-left: 2px solid #d5d7d9;
+  padding-left: 5%;
+  margin-right: 10%;
+}
+.article blockquote p * {
+  font-weight: 500;
+  font-size: 2.66vw;
+  margin-left: 0;
+  font-style: normal;
+  line-height: 1.4;
+  margin-bottom: 6vw;
+}
+
+.article * {
+  color: #ccc;
+}
+
+.article strong {
+  color: #fff;
+}/*# sourceMappingURL=simple.css.map */
