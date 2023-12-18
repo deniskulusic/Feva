@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/stratergy.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cursor " id="cursor" >
+        <p>View</p>
+    </div>
+
+    <header>
+        <div class="header-warp">
+            <a href="" class="logo">
+                <svg width="503" height="134" viewBox="0 0 503 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.979 131.302V48.3839H76.9665V131.302H91.7816V0H76.9665V35.9732H31.979V27.5195C31.979 21.2242 34.6891 18.5262 41.0126 18.5262H59.9833V5.57584H40.1093C25.1135 5.57584 17.1639 13.4899 17.1639 26.2604V35.9732H0V48.3839H17.1639V131.302H31.979ZM163.147 134C183.563 134 199.824 125.366 209.941 108.819L198.198 101.085C190.067 114.574 178.504 121.409 163.147 121.409C143.273 121.409 127.013 107.74 127.013 88.8537H212.832V83.4577C212.832 54.1396 191.332 33.2752 162.967 33.2752C133.156 33.2752 112.017 53.9597 112.017 84.1772C112.017 114.395 132.433 134 163.147 134ZM197.656 76.9825H127.193C128.277 59.1758 143.093 45.8658 162.967 45.8658C181.214 45.8658 196.572 59.7154 197.656 76.9825ZM257.93 134C273.106 134 287.018 128.064 293.522 119.251H293.883V131.302H308.157V64.3919C308.157 45.506 292.619 33.2752 268.228 33.2752C244.198 33.2752 226.673 46.0456 223.06 66.0107L237.333 69.0685C240.224 54.6792 251.606 46.2255 268.228 46.2255C282.862 46.2255 292.257 52.1611 292.257 61.3342C292.257 68.7087 285.211 72.4859 264.795 75.9034C234.261 80.7597 222.518 89.0335 222.518 105.761C222.518 123.208 235.707 134 257.93 134ZM261.001 120.87C245.102 120.87 237.514 116.013 237.514 105.761C237.514 96.408 246.005 91.3718 267.505 87.7745C283.404 85.0765 290.27 82.3785 292.98 77.5221H293.341V98.0268C293.341 110.078 277.984 120.87 261.001 120.87ZM371.086 131.302L418.241 35.9732H402.161L364.581 114.754H364.22L326.459 35.9732H310.199L357.354 131.302H371.086ZM452.773 134C467.95 134 481.861 128.064 488.366 119.251H488.727V131.302H503V64.3919C503 45.506 487.462 33.2752 463.071 33.2752C439.042 33.2752 421.517 46.0456 417.903 66.0107L432.176 69.0685C435.067 54.6792 446.449 46.2255 463.071 46.2255C477.706 46.2255 487.101 52.1611 487.101 61.3342C487.101 68.7087 480.055 72.4859 459.639 75.9034C429.105 80.7597 417.361 89.0335 417.361 105.761C417.361 123.208 430.55 134 452.773 134ZM455.844 120.87C439.945 120.87 432.357 116.013 432.357 105.761C432.357 96.408 440.849 91.3718 462.349 87.7745C478.248 85.0765 485.113 82.3785 487.823 77.5221H488.185V98.0268C488.185 110.078 472.828 120.87 455.844 120.87Z" fill="white"/>
+                    </svg>
+            </a>
+        </div>
+        <div class="nav-menu-button" >
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+    </header>
+    <nav>
+    <div class="menubg">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" style="transform: translate(0px);">
+            <defs>
+                <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="64s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="#777"></stop>
+                    <stop offset="100%" stop-color="#0000"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="47s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="#000"></stop>
+                    <stop offset="100%" stop-color="#8880"></stop>
+                </radialGradient>
+                <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+                    <animate attributeName="fx" dur="43s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                    <stop offset="0%" stop-color="#000"></stop>
+                    <stop offset="100%" stop-color="#0000"></stop>
+                </radialGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+                <animate attributeName="x" dur="40s" values="25%;0%;25%" repeatCount="indefinite"></animate>
+                <animate attributeName="y" dur="42s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="34s" repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+                <animate attributeName="x" dur="46s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
+                <animate attributeName="y" dur="48s" values="0%;50%;0%" repeatCount="indefinite"></animate>
+                <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="36s" repeatCount="indefinite"></animateTransform>
+            </rect>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+                <animate attributeName="x" dur="50s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                <animate attributeName="y" dur="52s" values="0%;25%;0%" repeatCount="indefinite"></animate>
+                <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="38s" repeatCount="indefinite"></animateTransform>
+            </rect>
+        </svg>
+    </div>
+    
+    <div class="menu-content">
+        <ol>
+			<li><a href="" class="hover-img">Home</a><img src="assets/img/menu_home.webp" alt="" id="cursor-img" class="cursor-img-style"></li>
+            <li><a href="" class="hover-img">Works</a><img src="assets/img/menu_works.webp" alt="" id="cursor-img-1" class="cursor-img-style"></li>
+            <li><a href="" class="hover-img">Journal</a><img src="assets/img/menu_works.webp" alt="" id="cursor-img-2" class="cursor-img-style"></li>
+            <li><a href="" class="hover-img">Expertise</a><img src="assets/img/menu_works.webp" alt="" id="cursor-img-3" class="cursor-img-style"></li>
+            <li><a href="" class="hover-img">About</a><img src="assets/img/menu_home.webp" alt="" id="cursor-img-4" class="cursor-img-style"></li>
+		</ol>
+        <div class="menu-footer">
+            <div class="menu-footer-element">
+                <a href="">Singapore</a>
+                <p>160 Robinson Road, #14-04 Singapore Business Federation Centre - 068914, Singapore</p>
+            </div>
+            <div class="menu-footer-element">
+                <a href="">Bali, Indonesia</a>
+                <p>Jalan Merta Agung, No.25,
+                    Kerobokan Kelod, Badung, Bali - 80361, Indonesia</p>
+            </div>
+            <div class=" menu-footer-element menu-footer-element-big">
+                <div>
+                    <a href="">Awards</a>
+                    <a href="">Brands</a>
+                    <a href="">Careers</a>
+                </div>
+                <div>
+                    <a href="">Inquries</a>
+                <a href="">Contact us</a>
+                <a href="">Transform   →</a>
+                </div>
+            </div>
+            <div class="menu-footer-element socials">
+                <a href="">Fb</a>
+                <a href="">Ig</a>
+                <a href="">Tw</a>
+                <a href="">In</a>
+                <a href="">Be</a>
+                <a href="">Tw</a>
+                <a href="">Terms</a>
+                <a href="">Simemap</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    
+    <section class="head-text" >
+        <div class="maxw container grid" id="paragraph">
+            <div class="head-text-link">/ Expertise</div>
+            <h1>Elevating Brands through innovation in Digital Transformation.</h1>
+            
+            </div>
+        </div>
+    </section>
+    
+    <section class="side-img">
+        <div class="side-img-div">
+            <picture>
+                
+                <img src="assets/img/expertise.webp" alt="" id="img11">
+            </picture>
+        </div>
+    </section>
+    <section class="content-1">
+        <div class="grid maxw container">
+            
+                <h3>We increase website leads,maximize revenue andproduce a positive ROI —validated with measurableresults.</h3>
+            <p>Revenue-driven, customer-centric, creatingstrategic solutions based in technology, wehelp brands and businesses navigate any andall facets of today's digital landscape todeliver tangible business results.</p>
+       
+          
+        </div>
+    </section>
+    <section class="partners">
+        <div class="grid maxw container">
+            <img src="https://fleava.com/assets/img/general/ornament.svg" alt="" id="rotateimg">
+            <h3>We love building and shaping brands that stand the test of time.</h3>
+            <p>At the heart of everything we do is this ideaof making business better. What drives usisn’t selling our clients a solution, it’s creatingthem something that is going tofundamentally improve their business.</p>
+        </div>
+    </section>
+    <section class="trail">
+        <div class="content">
+            <img class="content__img" src="assets/img/images/01.jpg" />
+            <img class="content__img" src="assets/img/images/02.jpg" />
+            <img class="content__img" src="assets/img/images/03.jpg" />
+            <img class="content__img" src="assets/img/images/04.jpg" />
+            <img class="content__img" src="assets/img/images/05.jpg" />
+            <img class="content__img" src="assets/img/images/06.jpg" />
+            <img class="content__img" src="assets/img/images/07.jpg" />
+            <img class="content__img" src="assets/img/images/08.jpg" />
+            <img class="content__img" src="assets/img/images/09.jpg" />
+            <img class="content__img" src="assets/img/images/10.jpg" />
+            <img class="content__img" src="assets/img/images/01.jpg" />
+            <img class="content__img" src="assets/img/images/12.jpg" />
+
+            
+            <div class="content__title">
+                <h6>/ Brands</h6>
+                <h2>We help businesses
+                    all around the world
+                    to grow.</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        
+            <div class="grid">
+                <div class="side">
+                    <div class="first-img">
+                        <picture>
+                            <img src="assets/img/value1.webp" alt="" id="img1">
+                        </picture>
+                    </div>
+                    <div class="first-text">
+                        <div class="work_caption">
+                            <span class="client">Quality</span>
+                            <span class="line_sep"></span>
+                        </div>
+                        <h4>Never compromise on quality.</h4>
+                        <p class="desc">
+                            We don’t want our brand associated with anything that isn’t of the highest quality. We make quality things, we give quality advice and we only hire quality people. People who want the best come to us for a reason.
+                        </p>
+                    </div>
+                    <div class="second-img">
+                        <picture>
+                            <img src="assets/img/value3.webp" alt="" id="img2">
+                        </picture>
+                    </div>
+                    <div class="second-text">
+                        <div class="work_caption">
+                            <span class="client">Quality</span>
+                            <span class="line_sep"></span>
+                        </div>
+                        <h4>Never compromise on quality.</h4>
+                        <p class="desc">
+                            We don’t want our brand associated with anything that isn’t of the highest quality. We make quality things, we give quality advice and we only hire quality people. People who want the best come to us for a reason.
+                        </p>
+                    </div>
+                </div>
+                <div class="side side-2" id="side2">
+                    <div class="first-img">
+                        <picture>
+                            <img src="assets/img/value2.webp" alt="" id="img3">
+                        </picture>
+                    </div>
+                    <div class="first-text">
+                        <div class="work_caption">
+                            <span class="client">Quality</span>
+                            <span class="line_sep"></span>
+                        </div>
+                        <h4>Never compromise on quality.</h4>
+                        <p class="desc">
+                            We don’t want our brand associated with anything that isn’t of the highest quality. We make quality things, we give quality advice and we only hire quality people. People who want the best come to us for a reason.
+                        </p>
+                    </div>
+                    <div class="second-img">
+                        <picture>
+                            <img src="assets/img/value4.webp" alt="" id="img4">
+                        </picture>
+                    </div>
+                    <div class="second-text">
+                        <div class="work_caption">
+                            <span class="client">Quality</span>
+                            <span class="line_sep"></span>
+                        </div>
+                        <h4>Never compromise on quality.</h4>
+                        <p class="desc">
+                            We don’t want our brand associated with anything that isn’t of the highest quality. We make quality things, we give quality advice and we only hire quality people. People who want the best come to us for a reason.
+                        </p>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+   <div class="paralax" id="paralax">
+    <section class="up-section hover" id="up-section" data-cursor-color="rgb(77, 143, 102)">
+        <div class="up-section-content grid" id="upcontent">
+            <h6>/ The Agency</h6>
+            <h2>We Provoke <br>  what's Possible.</h2> 
+        </div>
+        <div class="up-section-container" id="up-container">
+            
+        </div>
+        <div class="up-section-container-2" id="up-container-2">
+            
+        </div>
+    </section>
+    <section class="accordation">
+        <div class="maxw container grid">
+            <h6>/ Frequently Asked Questions</h6>
+            <div class="acordation-grid">
+                <div class="faq">
+                    <div class="faq-heading">
+                    <h4>Why do I need Consumer Insights?</h4>
+                    <span class="arrow"></span>
+                </div>
+                <p class="faq-content">
+                    
+                    Consumer insights help in competitive analysis regardless of whether you are the market leader in your sector, listening to what customers have to say about the goods and services you offer may tell you a lot about what they need and how you might meet those requirements in your own product, service, or business.
+                                    
+                </p>
+                <div class="border-1"></div>
+                <div class="border-2"></div>
+                </div>
+                
+                <div class="faq">
+                    <div class="faq-heading">
+                    <h4>Why do I need Consumer Insights?</h4>
+                    <span class="arrow"></span>
+                </div>
+                <p class="faq-content">
+                    
+                    Consumer insights help in competitive analysis regardless of whether you are the market leader in your sector, listening to what customers have to say about the goods and services you offer may tell you a lot about what they need and how you might meet those requirements in your own product, service, or business.
+                                    
+                </p>
+                <div class="border-1"></div>
+                <div class="border-2"></div>
+                </div>
+                <div class="faq">
+                    <div class="faq-heading">
+                    <h4>Why do I need Consumer Insights?</h4>
+                    <span class="arrow"></span>
+                </div>
+                <p class="faq-content">
+                    
+                    Consumer insights help in competitive analysis regardless of whether you are the market leader in your sector, listening to what customers have to say about the goods and services you offer may tell you a lot about what they need and how you might meet those requirements in your own product, service, or business.
+                                    
+                </p>
+                <div class="border-1"></div>
+                <div class="border-2"></div>
+                </div>
+                <div class="faq">
+                    <div class="faq-heading">
+                    <h4>Why do I need Consumer Insights?</h4>
+                    <span class="arrow"></span>
+                </div>
+                <p class="faq-content">
+                    
+                    Consumer insights help in competitive analysis regardless of whether you are the market leader in your sector, listening to what customers have to say about the goods and services you offer may tell you a lot about what they need and how you might meet those requirements in your own product, service, or business.
+                                    
+                </p>
+                <div class="border-1"></div>
+                <div class="border-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-2">
+        <div class="grid maxw container">
+            <h6>/ Expertise</h6>
+                <h3>Elevating Brands throughinnovation in DigitalTransformation.</h3>
+            <p>
+
+                We are passionate about uncovering the bestdigital innovations for forward—thinkingbrands looking to push boundaries and drivesignificant impact.
+                </p>
+       
+          
+        </div>
+    </section>
+    <section>
+        <div class="grid">
+            <div class="container-c hover drag" data-cursor-color="rgba(255,255,255,0.3)" >
+                <div class="cards " >
+                    <div class="card">
+                        <img src="assets/img/strategy.jpg" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/branding.webp" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/development.webp" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/ux.webp" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/marketing.webp" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/production.webp" alt="" />
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/strategy.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="cards-2">
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card__content" href="">
+                        <h4>Digital <br>Strategy</h4>
+                        <p>
+                            Consumer Insights & Trends, Go-To-Market Planning, Data Science & Analytics, Product Strategy & Roadmapping.                        </p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="footer-main" id="footer-text-2">
+            <a href="">
+                Let's Talk.
+              </a>
+        </div>
+        <div class="menu-footer" id="footer-text-1">
+            <div class="menu-footer-element">
+                <a href="">Singapore</a>
+                <p>160 Robinson Road, #14-04 Singapore Business Federation Centre - 068914, Singapore</p>
+            </div>
+            <div class="menu-footer-element">
+                <a href="">Bali, Indonesia</a>
+                <p>Jalan Merta Agung, No.25,
+                    Kerobokan Kelod, Badung, Bali - 80361, Indonesia</p>
+            </div>
+            <div class=" menu-footer-element menu-footer-element-big">
+                <div>
+                    <a href="">Awards</a>
+                    <a href="">Brands</a>
+                    <a href="">Careers</a>
+                </div>
+                <div>
+                    <a href="">Inquries</a>
+                <a href="">Contact us</a>
+                <a href="">Transform   →</a>
+                </div>
+            </div>
+            <div class="menu-footer-element socials">
+                <a href="">Fb</a>
+                <a href="">Ig</a>
+                <a href="">Tw</a>
+                <a href="">In</a>
+                <a href="">Be</a>
+                <a href="">Tw</a>
+                <a href="">Terms</a>
+                <a href="">Simemap</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <script src="assets/js/stratergy.js"></script>
+    <script src="assets/js/trail/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/trail/script.js"></script>
+		<script src="assets/js/trail/TweenMax.min.js"></script>
+</body>
+</html>
