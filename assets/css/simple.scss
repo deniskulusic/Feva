@@ -239,3 +239,22 @@ h1{
   .article strong{
     color: #fff;
   }
+  @media only screen and (max-width: 450px) {
+  .article {
+    .maxw {
+      max-width: 80vw;
+    }
+    a{
+      font-size: 3.4vw;
+    }
+    strong{
+      font-size: 3.4vw;
+    }
+    h2{
+      font-size: 8.5vw;
+    }
+    p{
+      font-size: 3.4vw;
+    }
+  }
+}

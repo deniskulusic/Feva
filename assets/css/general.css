@@ -359,4 +359,100 @@ footer .menu-footer {
 
 .footer-main:hover::after {
   width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    padding: 0%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    -moz-column-gap: 12px;
+    column-gap: 12px;
+  }
+  nav .menu-footer {
+    padding: 0 0 6vh 15%;
+  }
+  nav .menu-footer-element {
+    display: none;
+  }
+  nav .menu-footer-element-big {
+    display: block;
+  }
+  nav .menu-footer-element {
+    width: 100%;
+  }
+  nav .menu-footer-element div {
+    width: 90%;
+  }
+  nav .menu-footer-element a {
+    font-size: 20px;
+    opacity: 0.8;
+    color: white;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .logo {
+    right: 16vw;
+    top: 30px;
+  }
+  .logo svg {
+    width: auto;
+    height: 18px;
+  }
+  .nav-menu-button span {
+    width: 30px;
+    height: 1px;
+  }
+  .nav-menu-button span:nth-child(2) {
+    top: 20px;
+  }
+  .nav-menu-button span:nth-child(1) {
+    top: 28px;
+  }
+  .nav-menu-button span {
+    left: 4%;
+  }
+  .nav-menu-button {
+    right: 3vw;
+    height: 7vw;
+    width: 10vw;
+  }
+  .menu-content ol li {
+    display: block;
+  }
+  .menu-active {
+    width: 100vw;
+  }
+  .menu-content ol li a {
+    font-size: 40px;
+  }
+  .menu-content ol {
+    top: 34vh;
+  }
+  footer .menu-footer {
+    width: 90%;
+    gap: 50px;
+    flex-direction: column;
+    padding: 0 0 12vw 15%;
+  }
+  footer .menu-footer-element {
+    width: 100%;
+  }
+  footer .menu-footer-element a {
+    font-size: 20px;
+  }
+  footer .menu-footer-element p {
+    font-size: 20px;
+  }
+  footer .menu-footer-element-big div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer-main {
+    top: 12%;
+  }
 }/*# sourceMappingURL=general.css.map */

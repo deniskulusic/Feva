@@ -238,4 +238,18 @@ p {
 .card__content p {
   opacity: 0.7;
   padding-right: 5vw;
+}
+
+@media only screen and (max-width: 450px) {
+  .partners img {
+    display: none;
+  }
+  .card {
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    height: 17vh;
+  }
+  .works-img {
+    height: 23vh;
+  }
 }/*# sourceMappingURL=expertise.css.map */

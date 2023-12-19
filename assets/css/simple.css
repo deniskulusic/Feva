@@ -246,4 +246,22 @@ h1 {
 
 .article strong {
   color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+  .article .maxw {
+    max-width: 80vw;
+  }
+  .article a {
+    font-size: 3.4vw;
+  }
+  .article strong {
+    font-size: 3.4vw;
+  }
+  .article h2 {
+    font-size: 8.5vw;
+  }
+  .article p {
+    font-size: 3.4vw;
+  }
 }/*# sourceMappingURL=simple.css.map */

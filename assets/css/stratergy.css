@@ -531,6 +531,64 @@ h2 {
   opacity: 0;
 }
 
+@media only screen and (max-width: 450px) {
+  .trail {
+    display: none;
+  }
+  .partners img {
+    display: none;
+  }
+  .first-img {
+    height: 28vh !important;
+  }
+  .side-2 .first-img {
+    margin-top: 0%;
+  }
+  .second-img {
+    height: 28vh !important;
+    margin-top: 14vh !important;
+  }
+  .paragraph {
+    padding-bottom: 70vw;
+    padding-top: 40vw;
+  }
+  .paragraph h2 {
+    font-size: 11vw;
+  }
+  .paragraph p {
+    grid-column: span 12;
+    font-size: 4.5vw;
+    margin-bottom: 5vw;
+  }
+  .up-section {
+    height: 100vh;
+  }
+  .up-section-content {
+    top: 86vw;
+    width: 70vw;
+  }
+  .up-section-content h2 {
+    font-size: 11vw;
+  }
+  .up-section-content p {
+    grid-column: span 12;
+    font-size: 4.5vw;
+    margin-bottom: 5vw;
+  }
+  h6 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .card {
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+    height: 17vh;
+  }
+  .faq {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 @media screen and (min-width: 50em) {
   .content {
     height: 150vh;
